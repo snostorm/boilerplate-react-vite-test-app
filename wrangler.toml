@@ -3,5 +3,15 @@ name = "boilerplate-react-vite-test-app"
 pages_build_output_dir = "dist"
 compatibility_date = "2025-03-09"
 
+# Configure Pages Functions
+[build]
+command = "npm run build"
+
+[site]
+bucket = "./dist"
+
+[functions]
+directory = "functions"
+
 [env]
 production = { }

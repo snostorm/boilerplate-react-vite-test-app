@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:functions": "npx wrangler pages dev --port 8988",
+    "dev:all": "npm run build && npm run dev:functions -- --live-reload",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -14,6 +16,7 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250303.0",
     "@eslint/js": "^9.21.0",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
